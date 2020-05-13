@@ -1,0 +1,36 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each obras}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{bas}}
+                    </h3>
+                    <h5>
+                        {{cliente}}
+                    </h5>
+                    <p>
+                        {{descripcion}}
+                    </p>
+                    <p>
+                        {{ubicacion}}
+                    </p>
+                    <p>
+                        Latitud: {{latitud}}, Longitud: {{longitud}}
+                    </p>
+                    <a href="/obras/delete/{{id}}" class="btn btn-danger">Borrar BAS</a>
+                    <a href="/obras/edit/{{id}}" class="btn btn-secondary">Editar BAS</a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No hay ninguna obra cargada!</p>
+                <a href="/obras/add">Cargar una obra..</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
