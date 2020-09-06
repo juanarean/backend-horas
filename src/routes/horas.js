@@ -9,17 +9,6 @@ router.get('/add', (req, res) => {
 });
 
 router.post('/add', async(req, res) => {
-    //console.log(req.body);
-    // const { bas, cliente, lugar, latitud, longitud, descrip } = req.body;
-    // const entradaNueva = {
-    //     bas,
-    //     cliente,
-    //     lugar,
-    //     latitud,
-    //     longitud,
-    //     descrip
-    // };
-    //await pool.query('INSERT INTO horas set?', [entradaNueva]);
     res.send('Recibido');
 });
 
